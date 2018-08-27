@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 3 | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/sell-parts.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <style>
+
+        #firstform {
+            /* background-color: rgb(192, 248, 180); */
+            height: 2190px;
+        }
+
+        #secondform {
+            /* background-color: brown; */
+            height: 890px;
+
+
+        }
+
+        #fsone {
+            /* background-color: rgb(255, 0, 0); */
+            height: 90px;
+        }
+
+        #ffone {
+            /* background-color: yellow; */
+            height: 90px;
+        }
+
+        #fftwo {
+            /* background-color: green; */
+            height: 90px;
+        }
+
+        * {
+            /* font-family: 'Josefin Sans', sans-serif; */
+            font-family: 'Muli', sans-serif;
+
+
+        }
+
+        #top {
+            height: 60px;
+            font-size: 30px;
+            /* text-align: center; */
+            background-color: #489ee7;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            position: static;
+
+        }
+
+        #top>div>span {
+            color: white;
+            font-family: 'Muli', sans-serif;
+            margin-left: 10px;
+
+
+            /* top: 50%;
+            left: 50%;
+            margin: auto; */
+
+        }
+
+        /* div {
+            height: 60px;
+        } */
+
+        #save {
+
+            margin-left: 50%;
+        }
+
+        #footd {
+            margin-left: 50%;
+        }
+        #placedown{
+            margin-top: 40px;
+
+        }
+        #topbutton{
+            margin-top: 20px;
+        }
+        #topbutton div:last-child{
+            margin-left: 90px;
+        }
+        #itemidtext{
+
+
+
+        }
+        #items{
+
+        }
+        #placeo{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #addnewvehi{
+            margin-left: 735px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        /*p{*/
+            /*text-align: center;*/
+        /*}*/
+        #formbody{
+            background-color: #489ee7;
+        }
+        #fromlist{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        #tablelist{
+            margin-top: 40px;
+        }
+        #fromlistone{
+            padding: 50px;
+
+        }
+        #place{
+            margin-left: 339px;
+        }
+        #alertadd{
+            margin-left: 20px;
+        }
+
+    </style>
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+
+            </li>
+        </ul>
+        <h5>Manage Customers</h5>
+
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" id="aside">
+        <!-- Brand Logo -->
+        <a href="#" class="brand-link text-center">
+            <span class="brand-text font-weight-light">TK MOTORS</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                            <i class="nav-icon fa fa-dashboard"></i>
+                            <p>
+                                Dashboard
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="manage-customers.html" class="nav-link">
+                            <i class="nav-icon fa fa-user"></i>
+                            <p>
+                                Manage Customers
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="manage-parts.html" class="nav-link">
+                            <i class="nav-icon fa fa-wrench"></i>
+                            <p>
+                                Manage Parts
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="sell-parts.html" class="nav-link">
+                            <i class="nav-icon fa fa-sellsy"></i>
+                            <p>
+                                Sell Parts
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" id="content">
+        <!-- Content Header (Page header) -->
+
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div  class="col col-12  col-xl-4">
+                        <button id="addnewvehi" class="btn btn-primary">Service a Vehicle</button>
+
+                    </div>
+
+                </div>
+
+                <div id="topbutton" class="row">
+                    <div  class="col col-12 col-xl-8">
+                        <p id="alertadd"></p>
+
+                    </div>
+
+                </div>
+
+                <!--full cntainer 1st row(place order)-->
+
+                <div id="placedown" class="row">
+
+
+                    <div id="firstform" class="col col-12 col-xl-6">
+
+                        <div class="container">
+                            <div id="fromlist">
+                                <form id="csaveform">
+                                <div id="fromlistone">
+
+<div id="vehihide">
+                                    <div class="row">
+                                        <div id="ffone" class="col col-12 col-xl-3">
+                                            <span id="vidlbl">Service id</span>
+
+                                        </div>
+                                        <div id="fftwo" class="col col-12 col-xl-3">
+                                            <input id="vid" name="vid" type="text" class="form-control" readonly>
+
+                                        </div>
+                                        <div id="ffone" class="col col-12 col-xl-3">
+                                            <span id="datelbl">Enter date</span>
+
+                                        </div>
+                                        <div id="fftwo" class="col col-12 col-xl-3">
+                                            <input id="date" name="date" type="date" class="form-control">
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div id="ffone" class="col col-12 col-xl-3">
+                                            <span id="vnumlbl">Vehicle number</span>
+
+                                        </div>
+                                        <div id="fftwo" class="col col-12 col-xl-3">
+
+                                            <input id="vnum" name="vnum" type="text" class="form-control">
+
+
+                                            <!--
+                                                                        <div class="dropdown">
+
+                                                                            <select id="cus" class="btn  dropdown-toggle">
+
+
+                                                                                </select>
+
+                                                                        </div> -->
+
+
+                                        </div>
+                                        <div id="ffone" class="col col-12 col-xl-3">
+                                            <span id="vtypelbl">vehicle type</span>
+
+                                        </div>
+                                        <div id="fftwo" class="col col-12 col-xl-3">
+                                            <select id="vtype" name="vtype" class="form-control">
+                                                <option value="">Bike/Three wheel</option>
+                                                <option value="Bike">Bike</option>
+                                                <option value="Three wheel">Three wheel</option>
+
+                                            </select>
+
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+
+
+
+
+
+                                    <div class="row">
+                                        <div id="ffone" class="col col-12 col-xl-3">
+                                            <span id="issuelbl">Issue</span>
+
+                                        </div>
+                                        <div id="fftwo" class="col col-12 col-xl-9">
+
+                                            <input id="issue" name="issue" type="text" class="form-control">
+
+
+                                            <!--
+                                                                        <div class="dropdown">
+
+                                                                            <select id="cus" class="btn  dropdown-toggle">
+
+
+                                                                                </select>
+
+                                                                        </div> -->
+
+
+                                        </div>
+
+
+                                    </div>
+</div>
+
+                                    <div class="row">
+                                        <div id="ffone" class="col col-12 col-xl-3">
+                                            <span>NIC</span>
+
+                                        </div>
+                                        <div id="fftwo" class="col col-12 col-xl-3">
+                                            <input id="itemidtext1" type="text" class="form-control" name="nic">
+
+
+
+
+
+
+                                            <!-- <div class="dropdown">
+                                                    <select id="items" class="btn  dropdown-toggle">
+
+
+                                                        </select>
+
+                                            </div> -->
+
+
+
+
+
+                                        </div>
+
+                                        <div id="ffone" class="col col-12 col-xl-3">
+                                            <span>Customer Name</span>
+
+                                        </div>
+                                        <div id="fftwo" class="col col-12 col-xl-3">
+                                            <input id="iname" type="text" class="form-control" name="cname">
+
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                    <div class="row">
+                                        <div id="ffone" class="col col-12 col-xl-2">
+                                            <span>Contact</span>
+
+                                        </div>
+                                        <div id="fftwo" class="col col-12 col-xl-2">
+                                            <input id="uprice" type="text" class="form-control" name="ccontact">
+
+
+
+
+
+                                        </div>
+
+                                        <div id="ffone" class="col col-12 col-xl-2">
+                                            <span>Address</span>
+
+                                        </div>
+                                        <div id="fftwo" class="col col-12 col-xl-6">
+                                            <input id="qoh" type="text" class="form-control" name="caddress">
+
+                                        </div>
+
+
+
+
+
+
+
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div id="fftwo" class="col col-12 ">
+
+                                            <button id="csave" type="button" class="btn btn-primary"><p id="saveitem">Save</p></button>
+
+
+
+
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </div>
+                                    /
+                                    </form>
+                            </div><!--formitem-->
+
+
+                            <div class="row">
+
+
+
+                            </div>
+
+                            <div id="hidesfee">
+
+                            <div class="row" id="last">
+
+
+
+
+                                <div id="fftwo" class="col col-12 col-xl-3 ">
+
+
+                                    <span>Service fee</span>
+
+
+
+
+                                </div>
+                                <div id="fftwo" class="col col-12 col-xl-3 ">
+
+                                    <input id="sfee" type="text" class="form-control">
+
+
+
+
+                                </div>
+                                <div id="fftwo" class="col col-12 col-xl-6 ">
+
+                                    <button id="sfeebtn" type="button" class="btn btn-primary">Submit</button>
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div></div>
+
+
+
+
+                        </div>
+                        <!--1st form contain-->
+
+                        <!-- <div class="container">
+
+
+                            <div id="secrow" class="row">
+                                    <div id="fsone" class="col col-12 col-xl-3">
+                                        <span>mmmm</span>
+
+                                    </div>
+
+                                </div>
+                        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div id="secondform" class="col col-12 col-xl-6">
+
+                        <table id="tablelist" class="table col-12">
+                            <thead>
+                            <tr>
+                                <th scope="col">Vehicle_ID</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Customer NIC</th>
+
+                                <th scope="col">Vehicle Number</th>
+                                <th scope="col"></th>
+
+                            </tr>
+                            </thead>
+                            <tbody id="vlisttb">
+                            <!-- <tr><td>    </td><td>   </td><td>        </td><td>     </td><td>       </td></tr> -->
+
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="5" class="center aligned">
+
+                                </td>
+                            </tr>
+                            </tfoot>
+
+                        </table>
+
+
+                    </div>
+
+
+                </div>
+                <!--table two-->
+
+
+
+            </div>
+            <!--full container-->
+            <script src="dist/js/plugins/jquery/jquery.js"></script>
+            <!-- jQuery UI 1.11.4 -->
+            <script src="dist/js/plugins/jQueryUI/jquery-ui.min.js"></script>
+
+
+            <!--<script type="text/javascript" src="js/jquery.js"></script>-->
+
+            <!--<script type="text/javascript" src="js/HomeController.js"></script>-->
+            <!--<script src="js/myjs.js"></script>-->
+            <!--<script src="dist/js/controller/myjs.js"></script>-->
+
+        </section>
+        <!-- /.content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2018 <a href="https://www.facebook.com/ranga.lankathilaka">Ranga Lankathilaka</a>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 1.0.0
+        </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<script src="dist/js/plugins/jquery/jquery.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="dist/js/plugins/jQueryUI/jquery-ui.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="dist/js/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<script src="dist/js/controller/manage-customers-controller.js"></script>
+</body>
+</html>

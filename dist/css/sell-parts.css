@@ -1,0 +1,101 @@
+.recycle{
+    text-align: center;
+}
+
+#tblCustomers tbody tr{
+    cursor: pointer;
+}
+
+#tblCustomers tbody{
+    background-color: white;
+}
+
+.recycle:hover{
+    color: red;
+}
+.content-wrapper{
+    background-color: white;
+}
+#formtb{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    margin-top: 21%;
+    transform: translateY(-40%);
+}
+#csavebtn{
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+#sidebar{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+th{
+    font-weight:normal;
+}
+#aside{
+    /*background-color: #489ee7;*/
+
+}
+#cform{
+    margin-bottom: 90px;
+}
+h1{
+    text-align: center;
+}
+
+.div-cols{
+    padding:30px !important;
+}
+
+form div:last-child{
+    text-align:center;
+}
+
+table th:first-child{
+    width:10%;
+}
+
+.hide{
+    display: none !important;
+}
+.color{
+    background-color: #9ed0fc;
+}
+/* .color:hover{
+    background-color: #489ee7;
+} */
+
+.mouse{
+    cursor: pointer;
+}
+.display{
+    display: block;
+}
+.bordercolor{
+    border-color: red;
+}
+#last{
+    margin-top: 40px;
+}
+#content{
+
+
+}
+/*html, body {*/
+    /*margin: 0; height: 100%; overflow: hidden*/
+/*}*/
+
+
+
+/*@media screen and (max-width: 600px){*/
+    /*.html,body{margin: 0; height: 100%; overflow: hidden}*/
+    /*#formbody{*/
+
+/*background-color: #1e7e34;*/
+    /*}*/
+/*}*/
+
+
